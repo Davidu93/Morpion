@@ -14,13 +14,13 @@ int main()
     i++;
   }
 
-if(vainqueur == ROND)
-  printf("LE JOUEUR ROND A GAGNÉ\n");
-else if(vainqueur == CROIX)
-  printf("LE JOUEUR CROIX A GAGNÉ\n");
-else
-  printf("PErSONNE N'A GAGNE\n");
-
-return EXIT_SUCCESS;
+  if(vainqueur == ROND)
+    printf("LE JOUEUR ROND A GAGNÉ\n");
+  else if(vainqueur == CROIX)
+    printf("LE JOUEUR CROIX A GAGNÉ\n");
+  else
+    printf("PErSONNE N'A GAGNE\n");
+  
+  return EXIT_SUCCESS;
 
 }
