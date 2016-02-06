@@ -13,7 +13,7 @@ morpion_t creer_partie()
     res.joueur = ROND;
 }
 
-void afficher_plateau(morpion_t plateau)
+void afficher_plateau(morpion_t m)
 {
   int i , j;
   for(i=0;i<3;i++)
@@ -22,9 +22,9 @@ void afficher_plateau(morpion_t plateau)
     printf("\t |");
     for(j=0;j<3;j++)
     {
-      if(m.tab[][] == ROND)
+      if(m.tab[i][j] == ROND)
         printf("X|");
-      else if(m.tab[][] == CROIX)
+      else if(m.tab[i][j] == CROIX)
         printf("O|);
       else
         printf(" |");
@@ -32,4 +32,10 @@ void afficher_plateau(morpion_t plateau)
   printf("\n");
   }
 printf("\t ------- \n);
+}
+
+void changer_joueur(morpion_t * m)
+{
+  m->joueur = (m->joueur + 1) % 2;
+}
 }
