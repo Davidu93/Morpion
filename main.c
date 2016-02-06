@@ -5,7 +5,7 @@
 int main()
 {
   morpion_t partie = creer_partie();
-  int vainqueur = VIDE;
+  int vainqueur = VIDE , i = 0;
   while(vainqueur == VIDE && i < 9)
   {
     vainqueur = tour(&partie);
