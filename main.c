@@ -9,7 +9,7 @@ int main()
   while(vainqueur == VIDE && i < 9)
   {
     vainqueur = tour(&partie);
-    afficher_morpion(partie);
+    afficher_plateau(partie);
     changer_joueur(&partie);
     i++;
   }
@@ -19,8 +19,8 @@ int main()
   else if(vainqueur == CROIX)
     printf("LE JOUEUR CROIX A GAGNÉ\n");
   else
-    printf("PErSONNE N'A GAGNE\n");
-  
+    printf("PERSONNE N'A GAGNE\n");
+
   return EXIT_SUCCESS;
 
 }
