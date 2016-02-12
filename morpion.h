@@ -13,7 +13,7 @@ typedef struct{
 morpion_t creer_partie();
 void afficher_plateau(morpion_t m);
 void changer_joueur(morpion_t * m);
-int tour(morpion_t * m);
 int game_over(morpion_t m);
+int tour(morpion_t * m);
 
 #endif
